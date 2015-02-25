@@ -1,0 +1,143 @@
+<?php session_start(); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Welcome to Mapaca</title>
+<link href="search-citation.css" rel="stylesheet" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script language="javascript" src="support.js" type="text/javascript"></script>
+<script>
+
+$(document).ready(function(e) {
+	$("#getstarted").click(function(e) {
+        document.location.href="search.php";
+    });
+	$("#gethelp").click(function(e) {
+        document.location.href="help.php";
+    });
+	$("#hot1").click(function(e) {
+        document.location.href="hot1.php";
+    });
+});
+
+</script>
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text|Averia+Libre);
+
+.container {
+	min-width: 4in;
+	max-width: 8in;
+	margin: auto;
+	margin-top: 25px;
+	padding: 15px;
+	border: 1px solid #e15c11;
+	font-family: 'Crimson Text', serif;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+}
+.smaller {
+	font-size: 0.85em;	
+}
+
+.leadimage {
+	border: 1px solid #e15c11;
+	padding: 3px;
+	overflow: hidden;	
+}
+.emph { font-weight: bold; color: #e15c11; }
+
+#key {
+	background-color: #f4d7b7;color: #000; padding: 5px; width: 300px; margin: auto;
+	font-family: 'Crimson Text', serif;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	background-color:#F0EEEA;
+			
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1 style="float: left;"><span id="home">MAPACA</span> <span class="creamcopy" style="font-size: 0.5em;">Music and the Performing Arts in Colonial America</span></h1>
+<div style="clear: both;"></div>
+<h1>Help</h1>
+<p>The first thing to know about searching <span class="orangecopy">MAPACA</span> is that it makes use of multiple fields that help you drill down on specific tables in the database. This is not a single-field search engine, but works along the lines of Google's <a href="http://www.google.com/advanced_search" target="new">advanced search</a> options.</p>
+<p>The search fields are divided into two columns. On the left are fields related to the content of the publication you will be searching. Here you can search for content within the publications <span class="emph">( 1 )</span>, restrict publication date ranges <span class="emph">( 2 )</span>, specify colonies <span class="emph">( 3 )</span>, cities <span class="emph">( 4 )</span>, and titles of newspapers <br />
+  <span class="emph">( 5 )</span>. 
+<p>The right column presents search options that specify the <em>region of the world that the citation refers to</em>, broken down according to  broad geographic areas <span class="emph">( 9 )</span> and to specific locations <span class="emph">( 10 )</span>. Note that North America and Canada have sub-regions accessibel via drop-down menus.
+<p>SQL queries can be previewed by clicking &quot;SEE SQL&quot; <span class="emph">( 6 )</span>, searches are executed with the &quot;SEARCH&quot; button <span class="emph">( 7 )</span>, and the query builder can be reset via the &quot;RESET&quot; buton <span class="emph">( 8 )</span>.
+<p><img src="images/mapaca-interface.jpg" style="width:100%;height:auto;" />
+<p>You can chain multiple search terms by clicking the plus sign <img src="images/plus-sign.jpg" width="37" height="18" />next to the appropriate fields. 
+<p><img src="images/chain-sample.jpg" width="302" height="57" /> </p>
+<p>Each chained search item has a set of options: </p>
+<p>Each item can be deleted with the X, edited, or toggled between AND and OR relationship with the following item in the chain. The example above (working with the CONTENT field) would search for the <em>exact phrase</em> &quot;british sailors&quot; <strong>AND</strong> the term &quot;fiddle.&quot; Making subsequent specifications on fields such as year, colony or title would hone the results. All groups of chains are joined by an AND operation when submitted to the search engine. </p>
+<p>All text fields except for CONTENT make use of look-ahead typing, facilitating quick drills on the existing data sets.Put another way, the left column specifies the location of the publication while the right specifies <em>the location being referred to by the publication</em>. </p>
+<p>Another way to think about the data relationships is to consider Figure 1. The location of the publication is somewhere in the colonies and its citations refer to somewhere in the world. The MAPACA search fields tie these references together, as seen in Figure 2.
+<div class="leadimage">
+  <img src="images/lead-help.jpg" style="width:100%;height:auto;" /><br />
+  Figure 1.
+  </div>
+
+</p>
+  <div class="leadimage">
+  <img src="images/help-key.jpg" style="width:100%;height:auto;" /><br />Figure 2.<br />
+  <div id="key">
+  <table width="200" border="0" cellspacing="0" cellpadding="5" style="margin: auto;">
+  <tr>
+    <td colspan="8">Key</td>
+    </tr>
+  <tr>
+    <td style="background-color:#EB212D;width: 12px; height: 12px;">&nbsp;</td>
+    <td style="background-color:#FFF;border: 3px solid #EB212D;padding: 5px;">Publication</td>
+    <td>&nbsp;</td>
+    <td style="background-color:#7E4296;width: 12px; height: 12px;">&nbsp;</td>
+    <td style="background-color:#FFF;border: 3px solid #7E4296;padding: 5px;">Title</td>
+    <td>&nbsp;</td>
+    <td style="background-color:#2F3490;width: 12px; height: 12px;">&nbsp;</td>
+    <td style="background-color:#FFF;border: 3px solid #2F3490;padding: 5px;">Year</td>
+    </tr>
+  <tr>
+    <td style="background-color:#149348;width: 12px; height: 12px;">&nbsp;</td>
+    <td style="background-color:#FFF;border: 3px solid #149348;padding: 5px;">City</td>
+    <td>&nbsp;</td>
+    <td style="background-color:#E05E30;width: 12px; height: 12px;">&nbsp;</td>
+    <td style="background-color:#FFF;border: 3px solid #E05E30;padding: 5px;">Content</td>
+    <td>&nbsp;</td>
+    <td style="background-color:#FEDC3A;width: 12px; height: 12px;">&nbsp;</td>
+    <td style="background-color:#FFF;border: 3px solid #FEDC3A;padding: 5px;">Colony</td>
+    </tr>
+  <tr>
+    <td style="background-color:#000;width: 12px; height: 12px;">&nbsp;</td>
+    <td style="background-color:#FFF;border: 3px solid #000;padding: 5px;">Location</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+  </div>
+<p>
+Here are a few sample searches to get you started... It is important to play with the database.
+  <br />
+  <p>Find all articles relating to bells being rung that were <strong>published in New England</strong> and <strong>refer to bells rung in North America, excluding New England</strong>. This is an indicator of inter-regional solidaarity as it changed over time. Compare with all bells reports published in NE about bells rung in NE, and same for bells rung in Old England. Change over time indicates increasing association with other colonies over time and decreasing association with London, with intra-regional (i.e. bells rung in NE and published in NE) remaining constant. Can be used as an indicator for emerging American identity. Could also run the search on the whole database rather than just on bells.<br />
+  <button class="dashbutton" id="hot1">SAMPLE SEARCH</button></p>
+  <p>
+  <button class="dashbutton" id="getstarted">GET STARTED</button>
+</p>
+
+
+
+
+</div>
+
+</body>
+</html>

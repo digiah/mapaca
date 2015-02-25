@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+/*@import url(http://fonts.googleapis.com/css?family=Carme);*/
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text|Averia+Libre);
+
+body {
+	background-color: #262521;
+	font-family: 'Averia Libre', sans-serif;
+	font-size: 0.85em;
+	color: #f2dbbc;
+}
+
+h1 {
+	font-family: 'Averia Libre', sans-serif;
+	color: #e15c11;
+}
+
+h2 {
+	font-family: 'Averia Libre', sans-serif;
+}
+
+a:link, a:hover, a:active, a:visited {
+	color: #82d1ef;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #e15c11;
+}
+
+.bluebg {
+	color: #82d1ef;
+}
+
+.creamcopy {
+	color: #f4d7b7;
+}
+
+.orangecopy {
+	color: #e15c11;
+}
+
+.graycopy {
+	color: #1a1915;	
+}
+
+.tag {
+	max-width: 320px;
+	border: 1px solid #333;
+	display: none;
+	overflow: hidden;
+	background-color:#B6B6B6;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 5px;
+	float: left;
+}
+.tagtop {
+	width: 100%;
+	padding: 5px;
+	display: block;
+	background-color:#FFED9F;
+	background-color:#D3D3D3;
+	border-bottom: 1px solid #333;
+    font-family: 'Averia Libre', serif;
+	font-weight: bold;
+	font-size: 1.0em;
+	text-transform: uppercase;
+}
+.tagbottom {
+	width: 100%;
+	padding: 5px;
+	display: block;
+	background-color:#A8E2AD;
+	background-color:#F2F2F2;
+    font-family: 'Averia Libre', serif;
+	font-size: 0.9em;
+}
+
+.tagbody {
+    float: left;
+    overflow: hidden;
+	width: 225px;
+    float: right;
+    min-height: 60px;
+	border-left: 1px solid #333;
+	background-color:#A8E2AD;
+	background-color:#F2F2F2;
+}
+
+.tagend {
+    float: left;
+	width: 30px;
+	height: 60px;
+	background-color:#E0A4C0;
+	background-color:#B6B6B6;
+	text-align: center;
+}
+
+.taghead {
+    float: left;
+	width: 63px;
+	height: 60px;
+	background-color:#B6BCDB;
+	background-color:#B6B6B6;
+	text-align: center;
+}
+
+.dashbutton, .savebutton, a.dashbutton:link, a.dashbutton:hover, a.dashbutton:active, a.dashbutton:visited {
+	font-family: 'Averia Libre', serif;	
+	min-width: 40px;
+	height: 40px;
+	text-align: center;
+	border: none;
+	background-color: #82d2ed;
+	color: #1a1915;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 5px;	
+	font-weight:bold;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.dashbutton:link, a.dashbutton:hover, a.dashbutton:active, a.dashbutton:visited {
+  padding-top: 10px;
+}
+.savebutton {
+	height: 20px;
+	margin: 0px;
+	font-weight:lighter;	
+}
+
+.dashbutton:hover, .savebutton:hover, a.dashbutton:hover {
+	color: #e15c11;
+}
+
+
+#dashboardholder {
+	height: 50px;
+	display: block;
+	position: relative;
+}
+
+#dashboardblocker {
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#dashboard {
+	display: block;
+}
+
+.switch, .tagendX {
+	width: 40px;
+	float:left;
+	margin: 2px;
+	height: 20px;
+	line-height:20px;
+	overflow: hidden;	
+	border: 1px solid #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: 'Averia Libre', serif;
+	font-size: 0.2em;
+	color:#FFF;
+}
+
+.tagcopy {
+	min-width: 40px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 2px;
+	height: 18px;
+	border: 1px solid #FFF;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-family: 'Averia Libre', serif;
+	float: left;
+	text-align:center;
+	color: #1a1915;
+	background-color:#FFF;
+}
+
+.switchgreen {
+	font-family: 'Averia Libre', serif;
+	background-color:#82D2ED;
+	border: 1px solid #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	float: left;
+}
+.switchgray {
+	font-family: 'Averia Libre', serif;
+	background-color:#ACBEC4;
+	border: 1px solid #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	float: left;
+}
+
+.switchred {
+	background-color:#ACBEC4;
+	color:#FFF;
+	border: 1px solid #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	float: left;
+}
+
+.tagendX {
+	width: 20px;
+	background-color:#F00;
+}
+
+.tagendX:hover {
+	background-color:#FFF;
+	color:#F00;	
+}
+
+
+.minimenu {
+	width: 90%;
+	height: 20px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.hilite {
+	background-color:#FF0;
+}
+
+
+#Content2 {
+	
+	border: 0px transparent;
+	padding: 15px;	
+	
+	font-size: 1.0em;
+	line-height: 1.5em;
+	
+	background-color:#1a1915;
+	display: block;
+	
+}
+
+select, #citationholder {
+	font-size: 1.0em;
+}
+
+#referenceLocationBox, #referenceLocationCodesBox, #loc, #publicationCityBox, #publicationColonyBox, #publicationTitleBox, #publicationYearBox, #publicationContentBox {
+	
+	width: 100%; 
+	
+	float: left;
+	
+	font-size: 1.0em;
+	
+	padding: 10px;
+		
+	
+	position: relative;
+}
+
+#LocationMatches, #titlematches, #TitleMatches, #PubColonyMatches, #PubCityMatches {
+			
+	
+	width: 320px;
+	height: auto;
+	padding: 5px;
+	
+	background-color:#1a1915;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:100;
+}
+
+.pulldown {
+	font-family: 'Averia Libre', serif;
+}
+
+.textinput {
+	font-family: 'Crimson Text', sans-serif;
+	font-size: 1.0em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 0px;
+	padding: 5px;
+}
+
+.radiochoice {
+	margin-top: 2px; margin-bottom: 2px;
+}
+
+.logicbox {
+	display:table-cell;
+	vertical-align: middle;
+	text-align:center;
+	height: 62px;
+	width: 70px;
+	background-color:#ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 5px;
+	float: left;
+}
+
+.subTag {
+	/*background-color:#ccc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;*/
+	padding: 2px;
+	margin-top: 2px;
+}
+
+#home {
+	cursor: pointer;
+}
+
+#home:hover {
+	color: #82d2ed;
+}
